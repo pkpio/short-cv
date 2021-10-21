@@ -1,0 +1,97 @@
+% !TEX program = XeLaTeX
+\documentclass[]{friggeri-cv}
+
+\begin{document}
+\header{Praveen Kumar }{Pendyala}{In pursuit of building clean, efficient \& accessible tools to help everyone acheive more}
+
+% In the aside, each new line forces a line break
+\begin{aside}
+    \section{Information}
+        \noindent\rule{3cm}{0.5pt}
+        %DOB: 26.10.1992
+        \href{http://pkp.io}{http://pkp.io}
+        \href{https://github.com/praveendath92}{github/praveendath92}
+    \section{Contact}
+        \href{mailto:praveendath92@gmail.com}{praveendath92@gmail.com}
+        (+44) 7763089654
+        IG1 2ZJ, London
+        United Kingdom
+    ~
+    \section{Skills}
+        \noindent\rule{3cm}{0.5pt}
+    \section{Programming}
+        Java, Kotlin, Python, C++, TypeScript, Node
+    \section{Android}
+        Architecture Components, Proguard, Dex, Material design, Life-cycle, CameraX, OpenGL ES, Native code using C++, Benchmark, Profiler
+    \section{Build tools}
+        Gradle, Maven, Jenkins, Azure DevOps, GitHub Workflows
+    \section{Testing}
+        Unit testing, Automated UI testing, Smoke testing, AB testing, Experimentation, Performance bechmarking, Memory leak testing
+    \section{MOOCs}
+        Machine Learning 
+        (grade: 97.3\%)
+        ~
+        Algorithms: Design and Analysis, Part 1 
+        (grade: 95.6\%)
+\end{aside}
+~
+\section{Education}
+    \begin{entrylist}
+        \entry
+            {2014–2016}
+            {Masters, {\normalfont Distributed Software Systems}}
+            {Technische Universität Darmstadt}
+            {\emph{GPA of 3.9 out of 4.0 -- converted from 1.55 in German grading.}}
+        \entry
+            {2010–2014}
+            {Bachelors, {\normalfont Electrical Engineering}}
+            {Indian Institute of Technology Bombay}
+            {}%GPA: 7.49 / 10}
+    \end{entrylist}
+    \vspace{-0.3cm}
+
+\section{Experience}
+    \begin{entrylist}
+        \entry
+            {2017-now}
+            {Microsoft London, SwiftKey team}
+            {Software Engineer}
+            {\emph{Part of the Android team that delivers SwiftKey Keyboard to over 500 million users. The code base is predominantly Java, moving towards Kotlin \& tooling in multiple languages. My major contributions include:
+	    \newline 
+	    \newline
+	    Proposed and implemented a custom file format for Puppets (3D assets in SwiftKey) that is 45x faster \& 4x smaller than the standard 3D formats, and 800x faster \& 18x smaller than the existing format in use. I designed the file schema from scratch, created a convertor to transform assets from standard 3D format and implemented a file loader to read the custom format.
+            \newline
+            \newline
+	    Main contributor to the very light-weight and highly performant 3D rendering engine built for SwiftKey Puppets - it's under 550 KB and capable of rendering over 200+ FPS. Delivered the module with Unit tests, Integration tests, Memory leak tests, Performance tests and Visual Acceptance tests to ensure high reliability.   
+            \newline
+            \newline
+            Contributed to the App size reduction of SwiftKey by investigating optimizations to the byte code. Developed a new internal tool to test keyboard performance in rapid typing scenarios, capable of detecting regressions with precision of 2 ms. }}
+        \entry
+            {05–08 2014}
+            {Google Summer of Code}
+            {Android Developer \& Linux Kernel Programmer}
+            {\emph{Developed kernel display drivers for accessing the GUI of a Linux device on Android over USB interface. Improved the frame rate from an initial 10fps to 25fps by employing partial updates for only modified areas of UI and by implementing Run-length Encoding for loss-less, inline compression of image updates.}}
+    \end{entrylist}
+
+\section{Awards, Publications \& Talks}
+	\begin{entrylist}
+        \entry
+            {Speaker}
+            {SwiftKey’s CI / CD using Azure Devops}{Microsoft Android Dev Day 2020}
+            {}
+        \entry
+            {Speaker}
+            {Android App size reduction}{Multiple events 2019}
+            {\emph{Londroid at Facebook London and DroidCon in Lisbon. Presented our work on how we managed to reduce SwiftKey's download size by 50\%, and install size by 40\%}}
+        \entry
+            {Award}
+            {Received 20,000 euro prize money at CeBIT 2016, Hannover}{}
+            {\emph{Winners of MAPPING -- Managing Alternatives for Privacy, Property and Internet Governance, app competition.}}
+        \entry
+            {Publication}
+            {DroidAuditor: Forensic Analysis of Application-Layer Privilege Escalation Attacks on Android}{}
+            {\emph{Financial Cryptography and Data Security Conference 2016.}}        
+	\end{entrylist}
+
+
+\end{document}
