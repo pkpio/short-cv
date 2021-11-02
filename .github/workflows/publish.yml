@@ -26,7 +26,9 @@ jobs:
         
     - name: Format current date
       id: format_date
-      run: echo "::set-output name=date::$(date +"%B %d, %Y")"
+      run: |
+        echo "::set-output name=friendlyDate::$(date +"%d %B %Y")"
+        echo "::set-output name=fileNameDate::$(date +"%d-%b-%y")"
     
     - name: Create new release
       id: create_release
@@ -35,7 +37,7 @@ jobs:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       with:
         tag_name: release-${{ github.sha }}
-        release_name: CV as of ${{ steps.format_date.outputs.date }}
+        release_name: CV as of ${{ steps.format_date.outputs.friendlyDate }}
         draft: false
         prerelease: false
 
@@ -46,5 +48,5 @@ jobs:
       with:
         upload_url: ${{ steps.create_release.outputs.upload_url }}
         asset_path: cv.pdf
-        asset_name: cv.pdf
+        asset_name: cv-praveen-${{ steps.format_date.outputs.fileNameDate}}.pdf
         asset_content_type: application/pdf
